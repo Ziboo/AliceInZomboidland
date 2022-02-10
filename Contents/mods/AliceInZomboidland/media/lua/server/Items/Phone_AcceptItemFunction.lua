@@ -8,10 +8,8 @@ AcceptItemFunction = AcceptItemFunction or {}
 
 local inventory_utils = require('Utils/InventoryUtils')
 
-function AcceptItemFunction_Phone(container, item)
+function AcceptItemFunction.Phone(container, item)
     ---@type InventoryItem
     local it = item
     return inventory_utils.DoesPhoneAcceptItem(it)
 end
-
-AcceptItemFunction = AcceptItemFunction_Phone

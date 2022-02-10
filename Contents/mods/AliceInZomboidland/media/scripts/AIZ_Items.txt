@@ -22,7 +22,7 @@ module AIZ
         Capacity	=	1,
         BodyLocation = AIZ_Phone_Body_Location,
         CanBeEquipped = AIZ_Phone_Body_Location,
-        AcceptItemFunction = AIZ.Server.Items.AcceptItemFunction_Phone,
+        AcceptItemFunction = AcceptItemFunction.Phone,
     }
 
     item Visa

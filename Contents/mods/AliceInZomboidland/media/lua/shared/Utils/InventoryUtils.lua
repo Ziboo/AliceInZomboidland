@@ -27,7 +27,7 @@ InventoryUtils.GetEquippedPhone = function(player)
     ---@type IsoPlayer | IsoGameCharacter | IsoGameCharacter | IsoLivingCharacter | IsoMovingObject player
     local p = player
 
-    local phones = p:getInventory():FindAll(AIZ.Ids.Phone)
+    local phones = p:getInventory():FindAll(sharedConstants.Phone)
 
     for i = 0, phones:size()-1 do
         ---@type InventoryItem
