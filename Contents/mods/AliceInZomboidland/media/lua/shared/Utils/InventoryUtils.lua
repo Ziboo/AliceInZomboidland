@@ -6,7 +6,9 @@
 
 local InventoryUtils = {}
 
-local sharedConstants = AIZ.Shared.Constants
+local sharedConstants = require('Constants')
+
+
 
 InventoryUtils.IsPhone = function(item)
     return item:getFullType() == sharedConstants.Phone

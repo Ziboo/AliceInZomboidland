@@ -3,6 +3,10 @@
 --- DateTime: 2/8/2022 11:06 PM
 ---
 
+local inventory_utils = require("Utils/InventoryUtils")
+
+
+
 --- We check if the player is wearing the Phone
 local function CheckIfPlayingMod(player)
 
@@ -10,7 +14,7 @@ local function CheckIfPlayingMod(player)
         return
     end
 
-    local phone = AIZ.Shared.Utils.Inventory.GetEquippedPhone(player)
+    local phone = inventory_utils.GetEquippedPhone(player)
 
     if phone == nil then
         player:Say("Not playing 'Alice in Zomboidland' anymore...")
