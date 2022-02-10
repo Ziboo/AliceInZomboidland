@@ -19,7 +19,7 @@ InventoryUtils.IsVisa = function(item)
     return item:getFullType() == sharedConstants.Visa
 end
 
-
+---@param player AliasPlayer
 InventoryUtils.GetEquippedPhone = function(player)
     ---@type IsoPlayer | IsoGameCharacter | IsoGameCharacter | IsoLivingCharacter | IsoMovingObject player
     local p = player
@@ -40,7 +40,7 @@ end
 
 InventoryUtils.DoesPhoneAcceptItem = function(item)
     if item == nil then return false end
-    return InventoryUtils.IsPhone(item) or InventoryUtils.IsCard(item)
+    return InventoryUtils.IsVisa(item) or InventoryUtils.IsCard(item)
 end
 
 return InventoryUtils

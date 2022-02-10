@@ -6,10 +6,9 @@
 
 AcceptItemFunction = AcceptItemFunction or {}
 
-local inventory_utils = require('Utils/InventoryUtils')
+local inventory_utils = require('InventoryUtils')
 
+---@param item AliasItem
 function AcceptItemFunction.Phone(container, item)
-    ---@type InventoryItem
-    local it = item
-    return inventory_utils.DoesPhoneAcceptItem(it)
+    return inventory_utils.DoesPhoneAcceptItem(item)
 end
