@@ -1,0 +1,36 @@
+module AIZ
+{
+    imports {
+        Base,
+    }
+
+    item Card
+    {
+        Weight           = 0,
+        DisplayCategory  = AliceInZomboidland,
+        DisplayName      = Card,
+        Icon             = Card,
+    }
+
+    item Phone
+    {
+        DisplayCategory  = AliceInZomboidland,
+        Weight	         =	0,
+        Type	=	Container,
+        DisplayName	=	Phone,
+        Icon	=	VideoGame,
+        Capacity	=	1,
+        BodyLocation = AIZ_Phone_Body_Location,
+        CanBeEquipped = AIZ_Phone_Body_Location,
+        AcceptItemFunction = AIZ.Server.Items.AcceptItemFunction_Phone,
+    }
+
+    item Visa
+    {
+        DisplayCategory  = AliceInZomboidland,
+        Weight	         =	0,
+        Type	=	Normal,
+        DisplayName	=	Visa,
+        Icon	=	CreditCard,
+    }
+}
