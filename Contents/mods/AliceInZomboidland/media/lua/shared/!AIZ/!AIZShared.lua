@@ -9,7 +9,6 @@ AIZ.Shared.Utils = {
 }
 
 
-
 -- Add body location for phone
 local group = BodyLocations.getGroup("Human")
 group:getOrCreateLocation("AIZ_Phone_Body_Location")
