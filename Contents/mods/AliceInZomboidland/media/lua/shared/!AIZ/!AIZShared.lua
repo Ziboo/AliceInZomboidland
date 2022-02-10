@@ -1,9 +1,11 @@
 ---@class AIZ
 AIZ = AIZ or {}
 
+AIZ.Shared = {}
+
 AIZ.Shared.Constants = require("Constants")
 
-AIZ.Shared = {}
+
 AIZ.Shared.Utils = {
     Inventory = require("InventoryUtils")
 }
