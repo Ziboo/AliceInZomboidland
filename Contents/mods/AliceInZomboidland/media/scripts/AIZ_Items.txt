@@ -22,7 +22,7 @@ module AIZ
         Capacity	=	1,
         BodyLocation = AIZ_Phone_Body_Location,
         CanBeEquipped = AIZ_Phone_Body_Location,
-        AcceptItemFunction = AcceptItemFunction.Phone,
+        AcceptItemFunction = AcceptItemFunction.AIZ_Phone,
     }
 
     item Visa
@@ -32,5 +32,8 @@ module AIZ
         Type	=	Normal,
         DisplayName	=	Visa,
         Icon	=	CreditCard,
+        CanStack	=	FALSE,
     }
+
+
 }

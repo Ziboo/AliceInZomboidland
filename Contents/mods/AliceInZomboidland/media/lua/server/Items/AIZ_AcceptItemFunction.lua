@@ -6,9 +6,7 @@
 
 AcceptItemFunction = AcceptItemFunction or {}
 
-local inventory_utils = require('InventoryUtils')
-
 ---@param item AliasItem
-function AcceptItemFunction.Phone(container, item)
-    return inventory_utils.DoesPhoneAcceptItem(item)
+function AcceptItemFunction.AIZ_Phone(container, item)
+    return AIZMod.Shared.InventoryUtils.DoesPhoneAcceptItem(item)
 end
